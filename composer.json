@@ -1,0 +1,41 @@
+{
+    "name": "xcy/dcat-admin-sortable",
+    "alias": "dcat-admin-sortable",
+    "description": "dcat-admin 表格排序插件",
+    "type": "library",
+    "keywords": [
+        "dcat-admin",
+        "extension",
+        "sort",
+        "sortable",
+        "eloquent",
+        "model",
+        "laravel"
+    ],
+    "homepage": "https://github.com/xcy/dcat-admin-sortable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xcy",
+            "email": "2417754074@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0",
+        "james.xue/laravel-sortable": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xcy\\DcatAdminSortable\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Xcy\\DcatAdminSortable\\DcatAdminSortableServiceProvider",
+        "laravel": {
+            "providers": [
+                "Xcy\\DcatAdminSortable\\DcatAdminSortableServiceProvider"
+            ]
+        }
+    }
+}
